@@ -14,14 +14,12 @@ body {
     text-align: center;
 }
 
-/* Header */
 header {
     background-color: #1f4e79;
     color: white;
     padding: 30px 20px;
 }
 
-/* Navigation */
 nav {
     background-color: #163a5f;
     padding: 10px;
@@ -39,7 +37,6 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* Main container */
 .container {
     max-width: 900px;
     margin: 30px auto;
@@ -49,7 +46,6 @@ nav a:hover {
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
-/* Image */
 img {
     width: 100%;
     max-width: 400px;
@@ -58,12 +54,15 @@ img {
     display: block;
 }
 
-/* Sections */
 h2 {
     margin-top: 30px;
 }
 
-/* Buttons */
+p {
+    line-height: 1.6;
+    font-size: 17px;
+}
+
 .button {
     background-color: #1f4e79;
     color: white;
@@ -80,7 +79,6 @@ h2 {
     transform: translateY(-2px);
 }
 
-/* Footer */
 footer {
     background-color: #163a5f;
     color: white;
@@ -99,46 +97,67 @@ footer {
 
 <nav>
     <a href="#">Home</a>
-    <a href="#">About Us</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
 </nav>
 
 <div class="container">
 
-    <h2>Who We Are</h2>
+    <section id="about">
+        <h2>Who We Are</h2>
 
-    <img src="logo.jpeg" alt="IEPC Church">
+        <img src="logo.jpeg" alt="IEPC Church">
 
-    <p>
-        IEPC Church is a Burundian community church located in Elizabeth, South Australia.
-        We are a Christian church that believes in Jesus Christ, the Son of God,
-        our Redeemer and Saviour.
-    </p>
+        <p>
+            IEPC Church is a Burundian community church located in Elizabeth, South Australia.
+            We are a Christian church that believes in Jesus Christ, the Son of God,
+            our Redeemer and Saviour.
+        </p>
 
-    <p>
-        We believe that Jesus Christ died for our sins so that we may be saved.
-        Through Him, we have forgiveness, hope, restoration, and eternal life.
-    </p>
+        <p>
+            We believe that Jesus Christ died for our sins so that we may be saved.
+            Through Him, we have forgiveness, hope, restoration, and eternal life.
+        </p>
+    </section>
 
-    <h2>Service Times</h2>
-    <p>Sunday Worship: 10:00 AM</p>
-    <p>Prayer Meeting: Wednesday 6:00 PM</p>
+    <section id="services">
+        <h2>Service Times</h2>
 
-    <h2>Location</h2>
-    <p>521 Main N Rd, Elizabeth SA 5112</p>
+        <p><strong>Sunday Service:</strong><br>
+        11:30 AM – 2:45 PM</p>
 
-    <a class="button" href="https://www.google.com/maps?q=521+Main+N+Rd,+Elizabeth+SA+5112" target="_blank">
-        View on Google Maps
-    </a>
+        <p><strong>Prayer Meeting:</strong><br>
+        Thursday 5:00 PM – 7:00 PM</p>
 
-    <h2>Contact Us</h2>
-    <p>Email: iepc.church@outlook.com</p>
+        <h2>Choir Practice</h2>
 
-    <!-- WhatsApp Button -->
-    <a class="button" href="https://wa.me/61421469786" target="_blank">
-        Chat on WhatsApp
-    </a>
+        <p><strong>Voice of Peace Choir:</strong><br>
+        Tuesday: 5:00 PM – 8:00 PM<br>
+        Friday: 5:00 PM – 8:00 PM</p>
+    </section>
+
+    <section id="location">
+        <h2>Location</h2>
+        <p>521 Main N Rd, Elizabeth SA 5112</p>
+
+        <a class="button" href="https://www.google.com/maps?q=521+Main+N+Rd,+Elizabeth+SA+5112" target="_blank">
+            View on Google Maps
+        </a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: iepc.church@outlook.com</p>
+
+        <a class="button" href="mailto:iepc.church@outlook.com">
+            Send Email
+        </a>
+
+        <a class="button" href="https://wa.me/61421469786" target="_blank">
+            Chat on WhatsApp
+        </a>
+    </section>
 
 </div>
 
