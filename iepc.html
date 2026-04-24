@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEPC Church</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #1f4e79;
+            color: white;
+            padding: 30px 20px;
+        }
+
+        nav {
+            background-color: #163a5f;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #2f6fa3;
+            border-radius: 5px;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 180px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #eee;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        img {
+            width: 250px;
+            max-width: 100%;
+            margin: 20px 0;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        .button {
+            background-color: #1f4e79;
+            color: white;
+            padding: 12px 18px;
+            text-decoration: none;
+            border-radius: 6px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #2f6fa3;
+        }
+
+        footer {
+            background-color: #163a5f;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to IEPC Church</h1>
+        <p>Jesus Christ in us, the hope of glory.</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+
+        <div class="dropdown">
+            <a href="#">About Us ▼</a>
+            <div class="dropdown-content">
+                <a href="#">Who We Are</a>
+                <a href="#">Our Beliefs</a>
+                <a href="#">Our Community</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Services ▼</a>
+            <div class="dropdown-content">
+                <a href="#">Sunday Service</a>
+                <a href="#">Prayer Meetings</a>
+                <a href="#">Youth Ministry</a>
+            </div>
+        </div>
+
+        <a href="https://www.iepcchurch.org.au">Visit Website</a>
+        <a href="https://www.iepcsupportus.org.au">Support Us</a>
+    </nav>
+
+    <div class="container">
+        <h2>Who We Are</h2>
+
+        <img src="logo.jpeg" alt="IEPC Church logo">
+
+        <p>
+            IEPC Church is a Burundian community church located in Elizabeth, opposite TAFE.
+            We are a Christian church that believes in Jesus Christ, the Son of God,
+            our Redeemer and Saviour.
+        </p>
+
+        <p>
+            We believe that Jesus Christ died for our sins so that we may be saved.
+            Through Him, we have forgiveness, hope, restoration, and eternal life.
+        </p>
+
+        <h2>Where to Find Us</h2>
+
+        <p>
+            We welcome everyone to join us for worship, prayer, fellowship, and the teaching
+            of the Word of God.
+        </p>
+
+        <a class="button" href="https://www.iepcchurch.org.au">
+            View Service Programs
+        </a>
+
+        <a class="button" href="https://www.iepcsupportus.org.au">
+            Support Our Church
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 IEPC Church. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
